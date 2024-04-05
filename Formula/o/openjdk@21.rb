@@ -20,7 +20,7 @@ class OpenjdkAT21 < Formula
     sha256               x86_64_linux:   "5c1018f253412a4910800121274c63998bece38da5656f13b697bdb3774d8b31"
   end
 
-  keg_only :shadowed_by_macos
+  keg_only :versioned_formula
 
   depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
