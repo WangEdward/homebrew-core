@@ -19,7 +19,7 @@ class Jenkins < Formula
     depends_on "maven" => :build
   end
 
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   def install
     if build.head?

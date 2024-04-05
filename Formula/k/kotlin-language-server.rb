@@ -17,7 +17,7 @@ class KotlinLanguageServer < Formula
   end
 
   depends_on "gradle" => :build
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   def install
     ENV["JAVA_HOME"] = Language::Java.java_home

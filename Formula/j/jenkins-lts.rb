@@ -14,7 +14,7 @@ class JenkinsLts < Formula
     sha256 cellar: :any_skip_relocation, all: "da83dce961146c9ab8b1362e7442a486ec7f8c462c0847c4557bb7613e1f229d"
   end
 
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   def install
     system "#{Formula["openjdk"].opt_bin}/jar", "xvf", "jenkins.war"

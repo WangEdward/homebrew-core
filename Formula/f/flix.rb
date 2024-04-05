@@ -23,7 +23,7 @@ class Flix < Formula
 
   depends_on "gradle" => :build
   depends_on "scala" => :build
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   def install
     system Formula["gradle"].bin/"gradle", "build", "jar"

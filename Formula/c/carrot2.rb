@@ -19,7 +19,7 @@ class Carrot2 < Formula
   depends_on "gradle" => :build
   depends_on "node" => :build
   depends_on "yarn" => :build
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   def install
     # Make possible to build the formula with the latest available in Homebrew gradle

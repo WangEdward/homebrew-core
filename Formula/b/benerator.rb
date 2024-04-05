@@ -9,7 +9,7 @@ class Benerator < Formula
     sha256 cellar: :any_skip_relocation, all: "4e2d453a0cfbecdad0ed75af11e47cc18429d1ad1f3774c8f8024d97535ead18"
   end
 
-  depends_on "openjdk"
+  depends_on "openjdk@11"
 
   def install
     # Remove unnecessary files

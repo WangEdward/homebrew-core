@@ -20,7 +20,9 @@ class Gradle < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "02120d61732a8fa55d3800dcd8e7ca737a0c0ad82c590d6e4bad6545cebd52aa"
   end
 
-  depends_on "openjdk"
+  # no java 22 support for gradle 8.7
+  # https://github.com/gradle/gradle/blob/master/platforms/documentation/docs/src/docs/userguide/releases/compatibility.adoc
+  depends_on "openjdk@21"
 
   def install
     rm_f Dir["bin/*.bat"]

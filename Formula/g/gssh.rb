@@ -17,7 +17,7 @@ class Gssh < Formula
   end
 
   depends_on "gradle" => :build
-  depends_on "openjdk"
+  depends_on "openjdk@21"
 
   # gradle 8 build patch, remove in next release
   patch :DATA
