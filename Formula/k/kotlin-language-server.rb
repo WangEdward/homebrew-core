@@ -24,7 +24,7 @@ class KotlinLanguageServer < Formula
     #  Remove Windows files
     rm "gradlew.bat"
 
-    system "gradle", ":server:installDist", "-PjavaVersion=#{Formula["openjdk"].version.major}"
+    system "gradle", ":server:installDist", "-PjavaVersion=#{Formula["openjdk@21"].version.major}"
 
     libexec.install Dir["server/build/install/server/*"]
 
